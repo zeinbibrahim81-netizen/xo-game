@@ -54,7 +54,7 @@ span {
     justify-content: center;
     align-items: center;
     border: 2px solid #3a3a55;
-    transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* حركة ارتدادية ممتعة */
+    transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     box-shadow: 0 4px 0 #151525;
 } 
 
