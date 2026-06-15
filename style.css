@@ -1,43 +1,69 @@
-.game{
 
-width: 255px;
-text-align: center;
-font-family: system-ui;
-color: white;
-margin: auto;
- font-weight: bold;
-
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1e1e2f, #111119); 
 }
-.title{
-background-color: #f25;
-padding: 5px 0;
-margin: 5px 0;
-
-font-weight: bold;
 
 
+.game { 
+    width: 320px; 
+    text-align: center; 
+    font-family: 'Impact', 'Arial Black', sans-serif; 
+    color: white; 
+    background: rgba(255, 255, 255, 0.05);
+    padding: 25px;
+    border-radius: 24px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+} 
 
 
+.title { 
+    background: linear-gradient(90deg, #ff0055, #ff5500);
+    padding: 15px 0; 
+    margin: 0 0 20px 0; 
+    font-weight: bold; 
+    border-radius: 12px;
+    font-size: 28px;
+    text-transform: uppercase;
+    box-shadow: 0 5px 15px rgba(255, 0, 85, 0.4);
+} 
+
+span { 
+    color: #ffcc00; 
+    text-shadow: 0 0 10px rgba(255, 204, 0, 0.6);
+} 
+
+
+.square { 
+    width: 100px; 
+    height: 100px; 
+    background: #2a2a40;
+    color: #fff;
+    float: left; 
+    margin: 3px; 
+    font-size: 60px; 
+    border-radius: 16px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #3a3a55;
+    transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* حركة ارتدادية ممتعة */
+    box-shadow: 0 4px 0 #151525;
+} 
+
+.square:hover { 
+    background: #ff0055; 
+    border-color: #ff55aa;
+    cursor: pointer; 
+    transform: scale(1.1) rotate(2deg); 
+    box-shadow: 0 0 20px rgba(255, 0, 85, 0.6);
 }
-span{ 
-
-	color: rgb(237, 170, 37);
-	font-weight: bold;
-}
-.square{
-
-width: 80px;
-height: 80px;
-background-color: #f25;
-float: left;
-margin: 2px;
-font-size: 50px;
-
-}
-.square:hover{
-
-background-color: black;
-cursor: pointer;
-
 
 }
